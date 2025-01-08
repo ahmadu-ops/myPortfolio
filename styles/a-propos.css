@@ -1,0 +1,95 @@
+/* Section présentation */
+.a-propos .presentation {
+  text-align: center;
+  padding: 1px 20px;
+}
+
+.a-propos .presentation h1 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.a-propos .presentation p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0px auto;
+  color: var(--text-color);
+}
+
+/* Section parcours */
+.parcours {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.parcours h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.parcours-item {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.parcours .date {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+/* Section loisirs */
+.loisirs {
+  padding: 50px 20px;
+}
+
+.loisirs h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.loisirs-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.loisir-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.loisir-item img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.loisir-item h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin: 15px 0;
+}
+
+.loisir-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 0 15px 15px;
+}
