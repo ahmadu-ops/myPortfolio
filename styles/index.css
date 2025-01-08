@@ -1,0 +1,78 @@
+/* Page d'accueil */
+.profil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    height: 700px;
+    padding: 0 50px;
+}
+
+.description {
+
+    animation: fadeIn 1.5s ease;
+}
+
+.description h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    color: var(--secondary-color);
+}
+
+.description p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.bouton:hover {
+    background-color: #36578a;
+}
+
+.portrait {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    animation: slideIn 1.5s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
